@@ -44,9 +44,12 @@ export default function Home() {
       </main>
       <section id="about-me">
         <div className="w-full min-h-[100vh] px-7 py-4">
-          <div className="max-w-3xl mx-auto gap-2">
-            <div className="mx-auto flex justify-center pb-4">
-              <HyperText className="text-3xl lg:text-4xl text-center font-bold tracking-wide text-white border-b-4 border-yellow-600" text="ABOUT ME" />
+          <div className="max-w-3xl w-full mx-auto gap-2">
+            <div className="mx-auto flex justify-start md:justify-center pb-6">
+              <HyperText 
+                className="text-3xl lg:text-4xl text-start mr-auto md:text-center font-bold tracking-wide text-white border-b-4 border-yellow-600" 
+                text="ABOUT ME"
+              />
             </div>
             <BlurFade inView>
               <p className="text-lg text-justify leading-relaxed text-gray-300">
@@ -71,22 +74,25 @@ export default function Home() {
               If you'd like to connect or work together, feel free to reach out! Let's create something amazing.
             </p>
           </BlurFade>
-          <div>
-            <Dock direction="middle">
-              <DockIcon>
-                <Icons.gitHub className="size-7 hover:text-black hover:bg-white transition rounded" />
-              </DockIcon>
-              <DockIcon>
-                <Icons.linkedIn className="size-7 hover:text-blue-400" />
-              </DockIcon>
-              <DockIcon>
-                <Link href={"https://www.instagram.com/muhammad_rafai_28/"}>
-                  <Icons.instagram className="size-8 hover:text-pink-600" />
-                </Link> 
-              </DockIcon>
-            </Dock>
-            {/* <MyDock /> */}
-          </div>
+
+          <BlurFade inView>
+            <div>
+              <Dock direction="middle">
+                <DockIcon>
+                  <Icons.gitHub className="size-7 hover:text-black hover:bg-white transition rounded" />
+                </DockIcon>
+                <DockIcon>
+                  <Icons.linkedIn className="size-7 hover:text-blue-400" />
+                </DockIcon>
+                <DockIcon>
+                  <Link href={"https://www.instagram.com/muhammad_rafai_28/"}>
+                    <Icons.instagram className="size-8 hover:text-pink-600" />
+                  </Link> 
+                </DockIcon>
+              </Dock>
+              {/* <MyDock /> */}
+            </div>
+          </BlurFade>
         </div>
         </div>
       </section>
