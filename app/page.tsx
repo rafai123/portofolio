@@ -1,4 +1,5 @@
 "use client"
+import { HeroSection } from "@/components/Hero-section";
 import { MyDock } from "@/components/MyDock";
 import BlurFade from "@/components/ui/blur-fade";
 import { Dock, DockIcon } from "@/components/ui/dock";
@@ -22,26 +23,9 @@ const Icons = {
 
 export default function Home() {
 
-
-  const wordsRotateHome = ["Web Developer", "Frontend Web Developer", "Fullstack Web Developer"]
-
   return (
     <div className="bg-black text-white transition-all">
-      <main className="w-full mx-auto max-w-3xl h-[100vh] flex items-center px-7">
-        <div>
-            <BlurFade delay={.25} inView>
-              <HyperText className="font-extrabold text-3xl lg:text-4xl border-b-4 border-yellow-600 tracking-widest text-left" text="Muhammad Rafai"/>
-            </BlurFade>
-            <BlurFade inView>
-              <WordRotate className="font-bold text-3xl lg:text-4xl tracking-widest text-left" words={wordsRotateHome} />
-            </BlurFade>
-        </div>
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-          <Link href={"#about-me"}>
-            <ArrowBigDownDash size={35} className="text-white animate-bounce hover:animate-none transition hover:text-yellow-600" />
-          </Link>
-        </div>
-      </main>
+      <HeroSection />
       <section id="about-me">
         <div className="w-full min-h-[100vh] px-7 py-4">
           <div className="max-w-3xl w-full mx-auto gap-2">
@@ -76,8 +60,8 @@ export default function Home() {
           </BlurFade>
 
           <BlurFade inView>
-            <div>
-              <Dock direction="middle">
+            <div className="relative">
+              <Dock direction="middle" className="px-2 " magnification={60} distance={100}>
                 <DockIcon>
                   <Icons.gitHub className="size-7 hover:text-black hover:bg-white transition rounded" />
                 </DockIcon>
