@@ -1,6 +1,7 @@
 "use client"
 import { AboutMe } from "@/components/AboutMe-section";
 import { HeroSection } from "@/components/Hero-section";
+import { PortofolioSection } from "@/components/Portofolio-Section";
 import { Skill } from "@/components/Skill-section";
 import { ExtraSkills } from "@/components/extra-skills";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutMe />
       <Skill />
       <ExtraSkills />
+      <PortofolioSection />
     </div>
   );
 }
