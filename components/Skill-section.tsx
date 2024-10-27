@@ -8,9 +8,6 @@ import { TbApi } from "react-icons/tb"
 import BoxReveal from "./ui/box-reveal"
 
 export const Skill = () => {
-    const skills = [
-        {logo: IoLogoJavascript , name: "Javascript ES6"},
-    ]
     return (
         <div className="w-full min-h-[100vh] px-7 pt-2">
             <div className="max-w-3xl mx-auto sm:px-0">

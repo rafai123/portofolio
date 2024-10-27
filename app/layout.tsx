@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import "./globals.css";
-import { DM_Sans } from '@next/font/google';
+// import { DM_Sans } from '@next/font/google';
 import { Poppins } from '@next/font/google';
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'], // Pilih berat font yang diperlukan
-  variable: '--font-dm-sans', // Custom CSS variable
-});
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
+// const dmSans = DM_Sans({
+//   subsets: ['latin'],
+//   weight: ['400', '500', '700'], // Pilih berat font yang diperlukan
+//   variable: '--font-dm-sans', // Custom CSS variable
+// });
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '700'], // Pilih bobot yang ingin digunakan

@@ -21,14 +21,14 @@ export const AboutMe = () => {
 
             <BlurFade inView>
               <p className="text-md text-justify leading-relaxed text-gray-300 mt-4">
-                I enjoy turning complex problems into elegant code, and I am constantly exploring new tools and technologies to improve my skill set. Whether it’s crafting beautiful interfaces with{" "}
+                I enjoy turning complex problems into elegant code, and I am constantly exploring new tools and technologies to improve my skill set. Whether it&apos;s crafting beautiful interfaces with{" "}
                 <span className="text-yellow-500">React.js</span> or building scalable APIs with
                 <span className="text-yellow-500"> Node.js</span>, I am always excited to take on new challenges.
               </p>
             </BlurFade>
 
             <BlurFade inView>
-              <p className="text-md text-justify leading-relaxed text-gray-300 mt-4">If you'd like to connect or work together, feel free to reach out! Let's create something amazing.</p>
+              <p className="text-md text-justify leading-relaxed text-gray-300 mt-4">If you&apos;d like to connect or work together, feel free to reach out! Let&apos;s create something amazing.</p>
             </BlurFade>
 
             <BlurFade inView>
