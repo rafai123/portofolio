@@ -57,7 +57,7 @@ export const PortofolioSection = () => {
                             <h2 className="text-center border-b-2 border-yellow-600">BMI Roast</h2>
                             <div>
                                 <p className="text-justify text-gray-300">A
-                                Developed a BMI roasting website using Next.js and Tailwind CSS, leveraging Gemini AI to analyze users' height and weight for personalized feedback. The platform not only provides insightful roasting but also motivates users to achieve their ideal BMI through tailored guidance and encouragement.</p>
+                                Developed a BMI roasting website using Next.js and Tailwind CSS, leveraging Gemini AI to analyze users&apos; height and weight for personalized feedback. The platform not only provides insightful roasting but also motivates users to achieve their ideal BMI through tailored guidance and encouragement.</p>
                                 <p>built with :</p>
                                 <div className="flex mt-2 justify-around items-center flex-wrap">
                                     <RiNextjsLine className="size-7" />
