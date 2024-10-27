@@ -5,7 +5,12 @@ import WordRotate from "./ui/word-rotate"
 import { ArrowBigDownDash } from "lucide-react"
 
 export const HeroSection = () => {
-    const wordsRotateHome = ["Web Developer", "Frontend Web Developer", "Fullstack Web Developer"]
+    
+    const wordsRotateHome = [
+        "Web Developer", 
+        "Frontend Web Developer", 
+        "Fullstack Web Developer"
+    ]
 
     return (
         <>
