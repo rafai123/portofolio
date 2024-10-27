@@ -2,7 +2,7 @@ import Image from "next/image"
 import HyperText from "./ui/hyper-text"
 import ShineBorder from "./ui/shine-border"
 import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri"
-import { FaReact } from "react-icons/fa"
+import { FaBootstrap, FaReact } from "react-icons/fa"
 import { SiPrisma } from "react-icons/si"
 import { BiLogoPostgresql } from "react-icons/bi"
 import ShinyButton from "./ui/shiny-button"
@@ -17,9 +17,9 @@ export const PortofolioSection = () => {
                     <div className="mx-auto flex justify-start pb-6">
                         <HyperText className="text-3xl lg:text-4xl text-start mr-auto md:text-center font-bold tracking-wide text-white border-b-4 border-yellow-600" text="Projects" />
                     </div>
-                    <div className="grid gap-5 grid-cols-1">
+                    <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
                     <ShineBorder
-                        className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl"
+                        className="relative flex w-full flex-col items-start justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl"
                         color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                         >
                         <div>
@@ -84,7 +84,7 @@ export const PortofolioSection = () => {
                             <h2 className="text-center border-b-2 border-yellow-600">Netflix Clone</h2>
                             <div>
                                 <p className="text-justify text-gray-300">A
-                                Developed a Netflix clone using Next.js and Tailwind CSS, incorporating MongoDB for database management and Prisma as the ORM for efficient data handling. The application features user authentication through NextAuth, enabling seamless login with Google and GitHub OAuth. Users can browse, manage, and personalize their streaming experience in a secure and intuitive environment.</p>
+                                Final project for the Kampus Merdeka program at Skilvul is Carevul, a web application for booking doctor appointments. The platform features articles, a BMI calculator, and a chat function with doctors, built using React, Prisma, and Bootstrap.</p>
                                 <p>built with :</p>
                                 <div className="flex mt-2 justify-around items-center flex-wrap">
                                     <RiNextjsLine className="size-7" />
@@ -95,6 +95,33 @@ export const PortofolioSection = () => {
                                 </div>
                                 <div className="flex justify-center mt-7">
                                     <Link href={"https://netflix-clone-rafai.vercel.app/"}>
+                                        <ShinyButton className="mx-auto border">visit</ShinyButton>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </ShineBorder>
+                    <ShineBorder
+                        className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl"
+                        color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+                        >
+                        <div>
+                            <Image src="/carevul.png" width={600} height={600} alt="project" />
+                        </div>
+                        <div className="my-2 grid gap-3">
+                            <h2 className="text-center border-b-2 border-yellow-600">Carevul</h2>
+                            <div>
+                                <p className="text-justify text-gray-300">A
+                                Final project for the Kampus Merdeka program at Skilvul is Carevul, a web application for booking doctor appointments. The platform features articles, a BMI calculator, and a chat function with doctors, built using React, Prisma, and Bootstrap.</p>
+                                <p>built with :</p>
+                                <div className="flex mt-2 justify-around items-center flex-wrap">
+                                    <FaReact className="size-7" />
+                                    <SiPrisma className="size-7" /
+                                    >
+                                    <FaBootstrap />
+                                </div>
+                                <div className="flex justify-center mt-7">
+                                    <Link href={"https://carevul-five.vercel.app/"}>
                                         <ShinyButton className="mx-auto border">visit</ShinyButton>
                                     </Link>
                                 </div>

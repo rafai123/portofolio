@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/Hero-section";
 import { PortofolioSection } from "@/components/Portofolio-Section";
 import { Skill } from "@/components/Skill-section";
 import { ExtraSkills } from "@/components/extra-skills";
+import { FooterSection } from "@/components/footer-section";
 
 import React from "react";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Skill />
       <ExtraSkills />
       <PortofolioSection />
+      <FooterSection />
     </div>
   );
 }
