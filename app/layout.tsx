@@ -21,8 +21,8 @@ import { Poppins } from '@next/font/google';
 // });
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '500', '700'], // Pilih bobot yang ingin digunakan
-  variable: '--font-poppins',
+  weight: ['400', '700'],
+  variable: '--font-poppins', // Specify the weights you need
 });
 
 export const metadata: Metadata = {
