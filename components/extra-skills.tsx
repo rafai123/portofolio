@@ -1,26 +1,25 @@
-import TextReveal from "@/components/ui/text-reveal";
 import { SkillCloud } from "./skill-cloud";
 import { useEffect, useState } from "react";
 import BlurFade from "./ui/blur-fade";
 
 export const ExtraSkills = () => {
 
-    const [isDarkMode, setIsDarkMode] = useState(false);
+//     const [isDarkMode, setIsDarkMode] = useState(false);
 
-  useEffect(() => {
-    // Cek preferensi pengguna dari localStorage atau default ke light mode
-    const theme = localStorage.getItem("theme");
-    const isDark = theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
-    setIsDarkMode(isDark);
-    document.documentElement.classList.toggle("dark", isDark);
-  }, []);
+//   useEffect(() => {
+//     // Cek preferensi pengguna dari localStorage atau default ke light mode
+//     const theme = localStorage.getItem("theme");
+//     const isDark = theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
+//     setIsDarkMode(isDark);
+//     document.documentElement.classList.toggle("dark", isDark);
+//   }, []);
 
-  const toggleDarkMode = () => {
-    const newTheme = isDarkMode ? "light" : "dark";
-    setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle("dark", !isDarkMode);
-    localStorage.setItem("theme", newTheme); // Simpan preferensi pengguna
-  };
+//   const toggleDarkMode = () => {
+//     const newTheme = isDarkMode ? "light" : "dark";
+//     setIsDarkMode(!isDarkMode);
+//     document.documentElement.classList.toggle("dark", !isDarkMode);
+//     localStorage.setItem("theme", newTheme); // Simpan preferensi pengguna
+//   };
     return (
         <>
             <div className="w-full mx-auto min-h-[100vh] px-7 flex items-center justify-center text-white">
@@ -30,7 +29,7 @@ export const ExtraSkills = () => {
                         text=".this is the text"
                     /> */}
                     <BlurFade inView duration={1}>
-                        <h1 className="text-lg lg:text-2xl text-center">"...and I learn new things every day."</h1>
+                        <h1 className="text-lg lg:text-2xl text-center">&quot;...and I learn new things every day.&quot;</h1>
                     </BlurFade>
                     <BlurFade inView duration={1}>
                         <SkillCloud />
