@@ -19,10 +19,14 @@ export const SocialMediaDock = () => {
             <div className="relative">
                 <Dock direction="middle" className="px-2 " magnification={60} distance={100}>
                     <DockIcon>
-                        <Icons.gitHub className="size-7 hover:text-black hover:bg-white transition rounded" />
+                        <Link href={"https://github.com/rafai123"}>
+                            <Icons.gitHub className="size-7 hover:text-black hover:bg-white transition rounded" />
+                        </Link>
                     </DockIcon>
                     <DockIcon>
-                        <Icons.linkedIn className="size-7 hover:text-blue-400" />
+                        <Link href={"https://www.linkedin.com/in/muhammad-rafai-126249148/"}>
+                            <Icons.linkedIn className="size-7 hover:text-blue-400" />
+                        </Link>
                     </DockIcon>
                     <DockIcon>
                         <Link href={"https://www.instagram.com/muhammad_rafai_28/"}>
