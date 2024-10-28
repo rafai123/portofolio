@@ -9,7 +9,7 @@ import BoxReveal from "./ui/box-reveal"
 
 export const Skill = () => {
     return (
-        <div className="w-full min-h-[50vh] px-7 pt-2 border">
+        <div className="w-full min-h-[50vh] px-7 pt-2 ">
             <div className="max-w-3xl mx-auto sm:px-0">
                 <div className="flex mt-12 mb-10">
                     <h2 className="font-bold text-2xl tracking-widest border-b-4 w-auto border-yellow-600">Skills</h2>
