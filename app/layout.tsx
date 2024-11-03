@@ -4,7 +4,7 @@ import "./globals.css";
 // import { DM_Sans } from '@next/font/google';
 // import { Poppins } from '@next/font/google';
 
-import { Comic_Neue, DM_Sans, Poppins } from 'next/font/google';
+import { Comic_Neue, DM_Sans, Inter, Poppins } from 'next/font/google';
 
 // const roboto = Roboto({
 //   subsets: ['latin'],
@@ -15,16 +15,16 @@ import { Comic_Neue, DM_Sans, Poppins } from 'next/font/google';
 //   weight: ['400', '500', '700'],
 //   variable: '--font-poppins', // Custom CSS variable
 // })
-const comicNeue = Comic_Neue({
-  subsets: ['latin'],
-  weight: ['400', '700'], // Adjust according to your needs
-  variable: '--font-comic-neue', // Custom CSS variable
-})
-// const inter = Inter({
+// const comicNeue = Comic_Neue({
 //   subsets: ['latin'],
-//   weight: ['400', '500', '700'], // Adjust according to your needs
-//   variable: '--font-inter', // Custom CSS variable
+//   weight: ['400', '700'], // Adjust according to your needs
+//   variable: '--font-comic-neue', // Custom CSS variable
 // })
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'], // Adjust according to your needs
+  variable: '--font-inter', // Custom CSS variable
+})
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",
@@ -65,7 +65,7 @@ export default function RootLayout({
         />
       </head> */}
       <body
-        className={`${comicNeue.className} antialiased`}
+        className={`${inter.className} antialiased`}
       >
         {children}
       </body>
