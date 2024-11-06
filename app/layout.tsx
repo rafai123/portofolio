@@ -68,6 +68,7 @@ export default function RootLayout({
         className={`${inter.className} antialiased`}
       >
         {children}
+        <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "75e280619f80450cb444e4ab0dced14c"}'></script><!-- End Cloudflare Web Analytics -->
       </body>
     </html>
   );
